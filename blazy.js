@@ -163,7 +163,7 @@
     }
 
     function elementInView(ele, options) {
-        var rect = ele.getBoundingClientRect();
+        var rect = ele.parentElement.parentElement.getBoundingClientRect();
 
         if(options.container && _supportClosest){
             // Is element inside a container?
